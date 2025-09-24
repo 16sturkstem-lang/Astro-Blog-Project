@@ -1,17 +1,51 @@
 ---
-
 ---
-
 <html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
-	</head>
-	<body>
-		<h1>Astro</h1>
-		<h1>My Astro Site</h1>
-	</body>
+<head>
+    <meta charset="utf-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="generator" content={Astro.generator} />
+    <title>Welcome!</title>
+    <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/styles/global.css">
+    <style>
+        body {
+            font-family: 'VT323', monospace;
+            background-color: #00008B; /* Dark Blue */
+            color: #00FF00; /* Neon Green */
+            background-image: url('https://www.transparenttextures.com/patterns/stardust.png');
+            line-height: 1.8;
+		}
+        .main-content {
+            text-align: center;
+        }
+        .construction-gifs {
+            margin: 2em 0;
+            display: flex;
+            justify-content: center;
+            gap: 2em;
+        }
+        .construction-gifs img {
+            width: 150px;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="/">Home</a>
+        <a href="/about/">About</a>
+        <a href="/blog/">Blog</a>
+    </nav>
+    <div class="main-content">
+        <marquee><h1>Welcome to My Corner of the Web!</h1></marquee>
+        <p>This site is a work in progress, just like me!</p>
+        <div class="construction-gifs">
+            <img src="https://web.archive.org/web/20010604162646if_/http://www.geocities.com:80/Tokyo/6225/construction.gif" alt="Under construction GIF">
+            <img src="https://web.archive.org/web/20010604162646if_/http://www.geocities.com:80/Tokyo/6225/construction.gif" alt="Under construction GIF">
+            <img src="https://web.archive.org/web/20010604162646if_/http://www.geocities.com:80/Tokyo/6225/construction.gif" alt="Under construction GIF">
+        </div>
+        <p>Check out the <a href="/about">About Me</a> page to learn more about my journey.</p>
+    </div>
+</body>
 </html>

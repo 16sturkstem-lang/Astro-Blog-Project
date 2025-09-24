@@ -1,0 +1,76 @@
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="generator" content={Astro.generator} />
+    <title>My Astro Blog</title>
+    <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/styles/global.css">
+    <style>
+        body {
+            font-family: 'VT323', monospace;
+            background-color: #00008B; /* Dark Blue */
+            color: #00FF00; /* Neon Green */
+            background-image: url('https://www.transparenttextures.com/patterns/stardust.png');
+            line-height: 1.8;
+		}
+        .has-sidebar {
+            display: flex;
+        }
+        .sidebar {
+            width: 217px;
+            background-color: #00008B;
+            padding: 2em;
+            border-right: 2px solid #f119b1;
+            height: 100vh;
+            position: fixed;
+        }
+        .main-content {
+            flex: 1;
+            padding: 2em;
+            margin-left: 290px;
+        }
+    </style>
+</head>
+<body class="has-sidebar">
+    <div class="sidebar">
+        <h1>My Astro Blog</h1>
+        <p>A chronicle of my journey learning Astro, with a 90s twist!</p>
+        <nav>
+            <a href="/">Home</a>
+            <a href="/about">About</a>
+            <a href="/blog">Blog</a>
+        </nav>
+    </div>
+    <div class="main-content">
+        <div class="post">
+            <h2 class="post-title">First Post!</h2>
+            <p class="post-meta">Published on: 2024-07-25</p>
+            <div class="post-content">
+                <p>
+                    This is my first post on my new Astro-powered blog! I'm excited to explore the world of Astro and document my learning process here. The 90s theme is a fun throwback to the early days of the web. Stay tuned for more updates!
+                </p>
+            </div>
+        </div>
+        <div class="post">
+            <h2 class="post-title">Styling with Astro</h2>
+            <p class="post-meta">Published on: 2024-07-26</p>
+            <div class="post-content">
+                <p>
+                    Today, I've been diving into how styling works in Astro. It's really flexible! You can use global stylesheets, component-scoped styles, and even import CSS from npm packages. For this blog, I'm using a mix of global styles and some fun, retro-inspired inline styles.
+                </p>
+            </div>
+        </div>
+        <div class="post">
+            <h2 class="post-title">Creating a Tumblr-Style Layout</h2>
+            <p class="post-meta">Published on: 2024-07-27</p>
+            <div class="post-content">
+                <p>
+                    I decided to give my blog a classic Tumblr-style layout. It's a two-column design with a fixed sidebar on the left for the blog title, description, and navigation, and the main content area on the right for the posts. I achieved this using some simple CSS Flexbox. It's amazing how powerful modern CSS is!
+                </p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
