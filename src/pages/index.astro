@@ -1,4 +1,5 @@
 ---
+const pageTitle = "Welcome!";
 ---
 <html lang="en">
 <head>
@@ -6,7 +7,6 @@
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="viewport" content="width=device-width" />
     <meta name="generator" content={Astro.generator} />
-    <title>Welcome!</title>
     <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/styles/global.css">
     <style>
@@ -37,6 +37,7 @@
         <a href="/about/">About</a>
         <a href="/blog/">Blog</a>
     </nav>
+    <title>{pageTitle}</title>
     <div class="main-content">
 		<h1>Sarah Turk</h1>
         <marquee><h1>Welcome to My Corner of the Web!</h1></marquee>
