@@ -1,4 +1,7 @@
 ---
+import Footer from '../components/Footer.astro';
+import Header from '../components/Header.astro';
+
 const pageTitle = "Welcome!";
 ---
 <html lang="en">
@@ -9,6 +12,7 @@ const pageTitle = "Welcome!";
     <meta name="generator" content={Astro.generator} />
     <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/styles/global.css">
+    <title>{pageTitle}</title>
     <style>
         body {
             font-family: 'VT323', monospace;
@@ -32,12 +36,7 @@ const pageTitle = "Welcome!";
     </style>
 </head>
 <body>
-    <nav>
-        <a href="/">Home</a>
-        <a href="/about/">About</a>
-        <a href="/blog/">Blog</a>
-    </nav>
-    <title>{pageTitle}</title>
+    <Header />
     <div class="main-content">
 		<h1>Sarah Turk</h1>
         <marquee><h1>Welcome to My Corner of the Web!</h1></marquee>
@@ -49,5 +48,9 @@ const pageTitle = "Welcome!";
         </div>
         <p>Check out the <a href="/about">About Me</a> page to learn more about my journey.</p>
     </div>
+	<Footer />
+	<script>
+		import "../scripts/menu.js";
+	</script>
 </body>
 </html>

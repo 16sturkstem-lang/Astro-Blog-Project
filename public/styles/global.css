@@ -22,6 +22,7 @@ a:visited {
     color: #FF00FF;
 }
 
+
 nav {
     text-align: center;
     margin-bottom: 2em;
@@ -33,6 +34,19 @@ nav {
 
 nav a {
     margin: 0 1em;
+}
+
+.hamburger {
+    padding-right: 20px;
+    cursor: pointer;
+}
+
+.hamburger .line {
+    display: block;
+    width: 40px;
+    height: 5px;
+    margin-bottom: 10px;
+    background-color: #ff9776;
 }
 
 .page-content, .main-content {
@@ -92,3 +106,7 @@ img {
     margin: 0 auto 1em;
     display: block;
 }
+
+.hamburger {
+    display: none;
+  }

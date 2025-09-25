@@ -1,4 +1,7 @@
 ---
+import Footer from '../components/Footer.astro';
+import Header from '../components/Header.astro';
+
 const pageTitle = "Sarah's Blog";
 ---
 
@@ -38,6 +41,7 @@ const pageTitle = "Sarah's Blog";
     </style>
 </head>
 <body class="has-sidebar">
+    <Header />
     <div class="sidebar">
         <title>{pageTitle}</title>
         <h1>My Astro Blog</h1>
@@ -47,11 +51,6 @@ const pageTitle = "Sarah's Blog";
             <li><a href="/posts/post-2/">Post 2</a></li>
             <li><a href="/posts/post-3/">Post 3</a></li>
           </ul>
-        <nav>
-            <a href="/">Home</a>
-            <a href="/about">About</a>
-            <a href="/blog">Blog</a>
-        </nav>
     </div>
     <div class="main-content">
         <div class="post">
@@ -91,5 +90,9 @@ const pageTitle = "Sarah's Blog";
             </div>
         </div>
     </div>
+    <Footer />
+    <script>
+		import "../scripts/menu.js";
+	</script>
 </body>
 </html>

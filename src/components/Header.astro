@@ -1,0 +1,23 @@
+---
+import Hamburger from '/home/user/empty-project/src/components/Hamburger.astro';
+import Navigation from '/home/user/empty-project/src/components/Navigation.astro';
+---
+<style>
+    header {
+        position: relative;
+        z-index: 101;
+    }
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+</style>
+
+<header>
+    <nav>
+        <Hamburger />
+        <p>Turk Enterprises</p>
+        <Navigation />
+    </nav>
+</header>
